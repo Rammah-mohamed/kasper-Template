@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,33 @@
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" >
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap">
     <!-- Main CSS File -->
     <link rel="stylesheet" href="css/Kasper.css">
     <!-- Template Title -->
     <title>Kasper-Template Two</title>
 </head>
+
 <body>
+    <!-- scroll To Top -->
+    <button class="btn-top">Up</button>
     <!-- Start Header -->
     <div class="header">
         <div class="container">
-            <a href="" class="logo">
+            <a href="#" class="logo">
                 <img src="Image/logo.png" alt="">
             </a>
             <nav>
                 <i class="fa-solid fa-bars toggle-menu"></i>
-                <ul>
-                    <li><a href="#" class="active" >HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">ABOUT</a></i>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul> 
+                <ul class="links">
+                    <li><a href="#" class="active" data-section=".landing">HOME</a></li>
+                    <li><a href="#" data-section=".services">SERVICES</a></li>
+                    <li><a href="#" data-section=".portfolio">PORTFOLIO</a></li>
+                    <li><a href="#" data-section=".about">ABOUT</a></i>
+                    <li><a href="#" data-section=".pricing">PRICING</a></li>
+                    <li><a href="#" data-section=".contact">CONTACT</a></li>
+                </ul>
             </nav>
             <div class="form">
                 <i class="fas fa-search"></i>
@@ -47,19 +50,19 @@
         <div class="text">
             <div class="content">
                 <h2>HELLO WORLD! <br>
-                WE ARE KASPER,WE MAKE ART.</h2>
+                    WE ARE KASPER,WE MAKE ART.</h2>
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
-                eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
-                sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
+                    sem. Mauris blandit aliquet elit, eget tincidunt.</p>
             </div>
         </div>
         <i class="fa-solid fa-angle-left fa-2x left background-change"></i>
         <i class="fa-solid fa-angle-right fa-2x right background-change"></i>
         <div class="bullets">
             <ul>
-                <li></li>
-                <li class="active"></li>
-                <li></li>
+                <li class="active" data-img="Landing-1.jpg"></li>
+                <li data-img="Landing-2.jpg"></li>
+                <li data-img="Landing-3.jpg"></li>
             </ul>
         </div>
     </div>
@@ -70,7 +73,7 @@
             <div class="special-heading">
                 <h2>SERVICES</h2>
                 <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
-                blandit aliquet elit, eget tincidunt.</p>
+                    blandit aliquet elit, eget tincidunt.</p>
             </div>
             <div class="services-container">
                 <div class="srv-content">
@@ -138,72 +141,128 @@
                     blandit aliquet elit, eget tincidunt.</p>
             </div>
             <ul class="shuffle">
-                <li class="active">ALL</li>
-                <li>APP</li>
-                <li>PHOTOGRAPHY</li>
-                <li>WEB</li>
-                <li>PRINT</li>
+                <li class="active" data-img=".all">ALL</li>
+                <li data-img=".app">APP</li>
+                <li data-img=".photo">PHOTOGRAPHY</li>
+                <li data-img=".web">WEB</li>
+                <li data-img=".print">PRINT</li>
             </ul>
         </div>
         <div class="box">
-            <div class="imgs-container">
+            <div class="imgs-container all">
                 <img src="Image/port-1.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all app">
                 <img src="Image/port-2.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all print">
                 <img src="Image/port-3.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all app">
                 <img src="Image/port-4.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all web">
                 <img src="Image/port-5.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all web">
                 <img src="Image/port-6.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all photo">
                 <img src="Image/port-7.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
-            <div class="imgs-container">
+            <div class="imgs-container all photo">
                 <img src="Image/port-8.jpg" alt="">
                 <div class="Caption">
                     <h4>Awesome Image</h4>
                     <p>Photography</p>
                 </div>
             </div>
+            <div class="imgs-container extra all">
+                <img src="Image/port-3.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all app">
+                <img src="Image/port-7.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all print">
+                <img src="Image/port-1.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all app">
+                <img src="Image/port-4.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all web">
+                <img src="Image/port-5.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all web">
+                <img src="Image/port-8.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all photo">
+                <img src="Image/port-2.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
+            <div class="imgs-container extra all photo">
+                <img src="Image/port-6.jpg" alt="">
+                <div class="Caption">
+                    <h4>Awesome Image</h4>
+                    <p>Photography</p>
+                </div>
+            </div>
         </div>
-        <a href="#" class="more">more</a>
+        <button class="more">more</button>
     </div>
     <!-- End Portfolio -->
     <!-- Start Video -->
@@ -221,36 +280,36 @@
     <!-- Start About -->
     <div class="about">
         <div class="container">
-        <div class="special-heading">
-            <h2>About</h2>
-            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
-                blandit aliquet elit, eget tincidunt.</p>
-        </div>
-        <img src="/Image/about.png" alt="About">
+            <div class="special-heading">
+                <h2>About</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <img src="/Image/about.png" alt="About">
         </div>
     </div>
     <!-- End About -->
     <!-- Start Stats -->
-    <div class="Stats">
+    <div class="stats">
         <div class="container">
             <div class="box">
                 <i class="fa-solid fa-mug-hot"></i>
-                <div class="numb">1,263</div>
+                <div class="num" data-num="1263">0</div>
                 <p>Coffee Drinks</p>
             </div>
             <div class="box">
                 <i class="fa-solid fa-folder"></i>
-                <div class="numb">256</div>
+                <div class="num" data-num="256">0</div>
                 <p>Completed Projects</p>
             </div>
             <div class="box">
                 <i class="fa-solid fa-envelope"></i>
-                <div class="numb">1,743</div>
+                <div class="num" data-num="1743">0</div>
                 <p>Mail Sent</p>
             </div>
             <div class="box">
                 <i class="fa-solid fa-trophy"></i>
-                <div class="numb">17</div>
+                <div class="num" data-num="17">0</div>
                 <p>Awards Received</p>
             </div>
         </div>
@@ -260,8 +319,8 @@
     <div class="our-skills">
         <div class="container">
             <div class="testimonials">
-                    <h3>TESTIMONIALS</h3>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                <h3>TESTIMONIALS</h3>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
                     blandit aliquet elit, eget tincidunt.</p>
                 <div class="content">
                     <img src="Image/skills-01.jpg" alt="">
@@ -286,31 +345,31 @@
                 </ul>
             </div>
             <div class="skills">
-                    <h3>OUR SKILLS</h3>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
-                        blandit aliquet elit, eget tincidunt.</p>
+                <h3>OUR SKILLS</h3>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
                 <div class="prog-holder">
                     <h4>ADOBE</h4>
                     <div class="prog">
-                        <span style="width: 90%" progress-data="90%"></span>
+                        <span style="width: 0" data-prog="90%"></span>
                     </div>
                 </div>
                 <div class="prog-holder">
                     <h4>HTML &amp; CSS</h4>
                     <div class="prog">
-                        <span style="width: 85%" progress-data="85%"></span>
+                        <span style="width: 0" data-prog="85%"></span>
                     </div>
                 </div>
                 <div class="prog-holder">
                     <h4>JAVASCRIPT</h4>
                     <div class="prog">
-                        <span style="width: 80%" progress-data="80%"></span>
+                        <span style="width: 0" data-prog="80%"></span>
                     </div>
                 </div>
                 <div class="prog-holder">
                     <h4>PHP</h4>
                     <div class="prog">
-                        <span style="width: 83%" progress-data="83%"></span>
+                        <span style="width: 0" data-prog="83%"></span>
                     </div>
                 </div>
             </div>
@@ -321,7 +380,7 @@
     <div class="quote">
         <div class="container">
             <q>ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME
-            EST OUR DONEC STIN LORTIOS</q>
+                EST OUR DONEC STIN LORTIOS</q>
             <span>John Doe</span>
         </div>
     </div>
@@ -390,7 +449,7 @@
             </div>
             <div class="footer">
                 <p>Contact us if you have special request</p>
-                <a href="#" class="contact-link">Contact Us</a>
+                <button class="contact-link">Contact Us</button>
             </div>
         </div>
     </div>
@@ -401,10 +460,10 @@
             <form>
                 <i class="fa-solid fa-envelope fa-lg"></i>
                 <input type="mail" name="mail" placeholder="your email">
-                <input type="submit" value="Subscribe"> 
+                <input type="submit" value="Subscribe">
             </form>
             <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan
-            dit aliquet elit, eget tincidunt.</p>
+                dit aliquet elit, eget tincidunt.</p>
         </div>
     </div>
     <!-- End Subscribe -->
@@ -434,7 +493,7 @@
                         <address>Awesome Address 17<br>New York,NYC</br>123-4567-890</br>USA</address>
                     </div>
                 </div>
-            </div>     
+            </div>
         </div>
     </div>
     <!-- End contact -->
@@ -453,5 +512,8 @@
         </div>
     </div>
     <!-- End footer -->
+    <!-- JS File -->
+    <script src="main.js"></script>
 </body>
+
 </html>
